@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel - Farsa Refleksi</title>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Farsa Refleksi</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="database.html">Database</a></li>
+                <li><a href="artikel.html" class="active">Artikel</a></li>
+                <li><a href="edukasi.html">Edukasi</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+            <div class="nav-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Artikel -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Artikel & Informasi</h1>
+            <p>Temukan wawasan mendalam tentang terapi tradisional</p>
+        </div>
+    </header>
+
+    <!-- Filter Artikel -->
+    <section class="article-filter">
+        <div class="container">
+            <div class="filter-wrapper">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="refleksi">Refleksi</button>
+                <button class="filter-btn" data-category="pijat">Pijat</button>
+                <button class="filter-btn" data-category="kesehatan">Kesehatan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artikel Grid -->
+    <section class="article-section">
+        <div class="container">
+            <div class="article-grid">
+                <!-- Artikel 1 -->
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/4021779/pexels-photo-4021779.jpeg" alt="Manfaat Refleksi">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category">Refleksi</span>
+                            <span class="date">12 Des 2024</span>
+                        </div>
+                        <h3>10 Manfaat Terapi Refleksi untuk Kesehatan</h3>
+                        <p>Pelajari berbagai manfaat terapi refleksi untuk meningkatkan kesehatan tubuh Anda...</p>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </div>
+                </article>
+
+                <!-- Artikel 2 -->
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Teknik Pijat">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category">Pijat</span>
+                            <span class="date">10 Des 2024</span>
+                        </div>
+                        <h3>Teknik Dasar Pijat Tradisional</h3>
+                        <p>Mengenal berbagai teknik dasar pijat tradisional yang bisa Anda praktikkan...</p>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </div>
+                </article>
+
+                <!-- Tambahkan artikel lainnya -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Berikutnya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer content sama seperti di index.html -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Terapi - Farsa Refleksi</title>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Farsa Refleksi</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="database.html" class="active">Database</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="edukasi.html">Edukasi</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+            <div class="nav-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Database -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Database Terapi Tradisional</h1>
+            <p>Kumpulan informasi lengkap berbagai jenis terapi tradisional</p>
+        </div>
+    </header>
+
+    <!-- Search & Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari terapi...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="refleksi">Refleksi</button>
+                <button class="filter-btn" data-category="pijat">Pijat</button>
+                <button class="filter-btn" data-category="herbal">Herbal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Database Content -->
+    <section class="database-content">
+        <div class="container">
+            <div class="therapy-grid" id="therapyGrid">
+                <!-- Terapi Items -->
+                <div class="therapy-card" data-category="refleksi">
+                    <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Refleksi Kaki">
+                    <div class="therapy-info">
+                        <h3>Refleksi Kaki</h3>
+                        <p class="therapy-description">Terapi pijat pada titik-titik tertentu di kaki yang berhubungan dengan organ tubuh.</p>
+                        <div class="therapy-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Durasi: 60 menit</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>Tingkat: Pemula</span>
+                            </div>
+                        </div>
+                        <button class="btn-detail" onclick="showTherapyDetail('reflexology')">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <!-- Tambahkan card terapi lainnya -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Detail Terapi -->
+    <div id="therapyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent">
+                <!-- Konten modal akan diisi melalui JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer content sama seperti di index.html -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/database.js"></script>
+</body>
+</html>
+
